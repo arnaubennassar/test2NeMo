@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MAPPINGS xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="NeMo_mapping_v0.9.xsd">
+    <MAPPING>
+        <SOURCE_TYPE>UserDrivingPreferences</SOURCE_TYPE>
+        <TARGET_TYPE>UserDrivingPreferences</TARGET_TYPE>
+        <MAPPINGS>
+            <MAPPING>
+                <SOURCE_TYPE>UserDrivingPreferences/AverageConsumption</SOURCE_TYPE>
+                <TARGET_TYPE>UserDrivingPreferences/AverageConsumption</TARGET_TYPE>
+                <OPERATION  xsi:type="PredefinedOperationType">
+                    <INPUT>UserDrivingPreferences/AverageConsumption</INPUT>
+                    <OUTPUT>UserDrivingPreferences/AverageConsumption</OUTPUT>
+                    <FUNCTION>
+                        <FUNCTION_NAME>VALUE_COPY</FUNCTION_NAME>
+                    </FUNCTION>
+                    <REVERSE_FUNCTION>
+                        <FUNCTION_NAME>VALUE_COPY</FUNCTION_NAME>
+                    </REVERSE_FUNCTION>
+                </OPERATION>
+            </MAPPING>
+            <MAPPING>
+                <SOURCE_TYPE>UserDrivingPreferences/ConsumptionPattern</SOURCE_TYPE>
+                <TARGET_TYPE>UserDrivingPreferences/ConsumptionPattern</TARGET_TYPE>
+                <OPERATION  xsi:type="PredefinedOperationType">
+                    <INPUT>UserDrivingPreferences/ConsumptionPattern</INPUT>
+                    <OUTPUT>UserDrivingPreferences/ConsumptionPattern</OUTPUT>
+                    <FUNCTION>
+                        <FUNCTION_NAME>VALUE_COPY</FUNCTION_NAME>
+                    </FUNCTION>
+                    <REVERSE_FUNCTION>
+                        <FUNCTION_NAME>VALUE_COPY</FUNCTION_NAME>
+                    </REVERSE_FUNCTION>
+                </OPERATION>
+            </MAPPING>
+            <MAPPING>
+                <SOURCE_TYPE>UserDrivingPreferences/ID</SOURCE_TYPE>
+                <TARGET_TYPE>UserDrivingPreferences/ConsumptionPattern/User/eMAID</TARGET_TYPE>
+                <OPERATION  xsi:type="PredefinedOperationType">
+                    <INPUT>UserDrivingPreferences/ID</INPUT>
+                    <OUTPUT>UserDrivingPreferences/ConsumptionPattern/User/eMAID</OUTPUT>
+                    <FUNCTION>
+                        <FUNCTION_NAME>VALUE_COPY</FUNCTION_NAME>
+                    </FUNCTION>
+                    <REVERSE_FUNCTION>
+                        <FUNCTION_NAME>VALUE_COPY</FUNCTION_NAME>
+                    </REVERSE_FUNCTION>
+                </OPERATION>
+            </MAPPING>
+        </MAPPINGS>
+    </MAPPING>
+</MAPPINGS>
